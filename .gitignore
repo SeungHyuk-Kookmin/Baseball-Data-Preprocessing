@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Data files
+data/**
+outputs/**
+runs/**
+
+# Keep folder structure
+!data/**/.gitkeep
+!outputs/**/.gitkeep
+!runs/**/.gitkeep
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+
+# Large compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Logs
+*.log

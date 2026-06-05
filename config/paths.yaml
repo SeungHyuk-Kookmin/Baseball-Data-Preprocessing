@@ -1,0 +1,38 @@
+# =====================================
+# 프로젝트 경로 설정 (중앙 관리)
+# =====================================
+
+# 데이터 경로
+data:
+  root: "data"
+  
+  # 원본 데이터
+  raw:
+    input: "data/raw/input"
+    videos: "data/raw/videos"
+  
+  # Clip Extractor 데이터
+  clip_extractor:
+    scene_clips: "data/clip_extractor/scene_clips"
+    labeled_scene_clips: "data/clip_extractor/labeled_scene_clips"
+    view_dataset: "data/clip_extractor/view_dataset"
+    classified_atbat_clips: "data/clip_extractor/classified_atbat_clips"
+  
+  # Batter Tracking 데이터
+  batter_tracking:
+    yolo_input_clips: "data/batter_tracking/yolo_input_clips"
+    yolo_labeling: "data/batter_tracking/yolo_labeling"
+    yolo_auto: "data/batter_tracking/yolo_auto"
+
+# 출력 경로
+outputs:
+  root: "outputs"
+  batter_tracking: "outputs/batter_tracking"
+  clip_extractor: "outputs/clip_extractor"
+
+# 학습 결과 경로
+runs:
+  root: "runs"
+  batter_tracking: "runs/batter_tracking"
+  clip_extractor: "runs/clip_extractor"
+  yolo: "runs/yolo"

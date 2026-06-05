@@ -14,16 +14,6 @@ __pycache__/
 .venv/
 venv/
 
-# Data files
-data/**
-outputs/**
-runs/**
-
-# Keep folder structure
-!data/**/.gitkeep
-!outputs/**/.gitkeep
-!runs/**/.gitkeep
-
 # Videos
 *.mp4
 *.avi

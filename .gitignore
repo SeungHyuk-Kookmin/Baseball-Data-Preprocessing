@@ -2,15 +2,21 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # macOS
 .DS_Store
 
 # Editor settings
 .vscode/
+.idea/
 
 # Environment
 .env
+.env.*
+!.env.example
 .venv/
 venv/
 
@@ -36,6 +42,23 @@ venv/
 *.tar.gz
 *.rar
 *.7z
+
+# Generated datasets and experiment artifacts
+data/raw/input/*
+data/raw/videos/
+data/clip_extractor/scene_clips/
+data/clip_extractor/labeled_scene_clips/
+data/clip_extractor/view_dataset/
+data/clip_extractor/classified_atbat_clips/
+data/batter_tracking/yolo_input_clips/
+data/batter_tracking/yolo_raw/
+data/batter_tracking/yolo_auto/images/
+data/batter_tracking/yolo_auto/labels/
+data/batter_tracking/yolo_labeling/**/images/
+data/batter_tracking/yolo_labeling/**/labels/
+outputs/
+runs/
+*.cache
 
 # Logs
 *.log
